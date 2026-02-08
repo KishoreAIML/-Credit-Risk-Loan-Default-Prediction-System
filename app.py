@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import joblib
 
-model = joblib.load("xgb_model.pkl")
+model = joblib.load("model.pkl")
 scaler = joblib.load("scaler.pkl")
 encoder = joblib.load("encoder.pkl")
 
@@ -103,6 +103,7 @@ if submit:
         st.error(f"High Risk Applicant")
 
     st.info(f"Default Probability: {probability:.2%}")
+
 
 
 
