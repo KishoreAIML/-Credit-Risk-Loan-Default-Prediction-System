@@ -242,7 +242,7 @@ These features are the **most important for predicting loan default**.
 1. Clone repository:
 
 ```bash
-git clone <repo-url>
+git clone <[repo-url](https://github.com/KishoreAIML/-Credit-Risk-Loan-Default-Prediction-System.git)>
 ```
 
 2. Install dependencies:
