@@ -3,9 +3,9 @@ import pandas as pd
 import numpy as np
 import joblib
 
-model = joblib.load("model.pkl")
-scaler = joblib.load("scaler.pkl")
-encoder = joblib.load("encoder.pkl")
+model = joblib.load("models/model.pkl")
+scaler = joblib.load("models/scaler.pkl")
+encoder = joblib.load("models/encoder.pkl")
 
 st.set_page_config(page_title="Loan Prediction", layout="wide")
 st.title("Credit Risk & Loan Default Prediction System")
@@ -103,6 +103,7 @@ if submit:
         st.error(f"High Risk Applicant")
 
     st.info(f"Default Probability: {probability:.2%}")
+
 
 
 
